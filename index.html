@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCS - Login</title>
+    <link rel="stylesheet" href="../style/login_style.css">
+    <script src="https://kit.fontawesome.com/9d2affc56d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="mainBox">
+        <div class="loginImg">
+            <img src="../assets/login_img.jpg" alt="">
+        </div>
+        <div class="loginBox">
+            <span class="loginTitle">Login</span>
+            <span class="loginSubtitle">Bem-vindo! Por favor, insira seus dados.</span>
+            <form id="loginForm" class="login__form">
+                <div class="login__content">
+                    <div class="login__box">
+                        <i class="bx bx-lock-alt"></i>
+                        <div class="login__box-input">
+                            <input type="email" id="email" required class="login__input" placeholder="">
+                            <label for="email" class="login__label">Email</label>
+                            <i class="fa-solid fa-user login__icon"></i>
+                        </div>
+                    </div>
+                    <div class="login__box">
+                        <div class="login__box-input">
+                            <input type="password" id="password" required class="login__input" placeholder="">
+                            <label for="password" class="login__label">Senha</label>
+                            <i class="fa-solid fa-key login__icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__check">
+                    <div class="login__check-group">
+                        <input type="checkbox" class="login__check-input" id="login-check">
+                        <label for="login-check" class="login__check-label">Permanecer conectado</label>
+                    </div>
+                    <a href="#" class="login__forgot">Esqueceu a senha?</a>
+                </div>
+                <button type="button" class="register__button">Nova conta</button>
+                <button type="submit" class="login__button">Entrar</button>
+            </form>
+        </div>      
+    </section>
+</body>
+<script src="./Script/login_script.js" type="module"></script>
+</html>
