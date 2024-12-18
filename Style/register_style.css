@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap');
+
+body {
+    background: #E7E9F6;
+    font-family: "Anek Bangla", sans-serif;
+    font-weight: 500;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+.mainBox {
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    height: 60vh;
+    min-width: 650px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.registerImg {
+    flex: 1;
+}
+
+.registerImg img {
+    height: 60vh;
+    border-radius: 20px 0 0 20px;
+}
+
+.registerBox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerTitle {
+    margin-top: 10%;
+    height: 3vw;
+    font-size: 3vh;
+    font-weight: 520;
+}
+
+.register__content {
+    margin-bottom: 6vh;
+}
+
+.register__box {
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.register__input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #535353;
+    padding: 5px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.register__input:focus {
+    border-bottom: 2px solid #692DFF;
+}
+
+.register__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    color: #535353;
+}
+
+.register__input:focus + .register__label,
+.register__input:not(:placeholder-shown) + .register__label {
+    top: -20px;
+    font-size: 12px;
+    color: #692DFF;
+}
+
+.register__button {
+    background-color: #692DFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register__button:hover {
+    background-color: #4f19d8;
+}
+
+.register__check {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.register__check-input {
+    margin-right: 10px;
+}
+
+.register__forgot {
+    color: #692DFF;
+    text-decoration: none;
+}
+
+.register__forgot:hover {
+    text-decoration: underline;
+}
+
+.register__box-input {
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.register__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    color: #535353;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.register__icon {
+    right: 2%;
+}
+
+.register__input:focus + .register__label ~ .register__icon {
+    color: #692DFF;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+
+.login__button {
+    background-color: #ffffff;
+    color: #535353;;
+    border: 2px solid #535353;;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login__button:hover {
+    background-color: #d8d8d8;
+}
+
+.error-box {
+    position: fixed;
+    bottom: 20px;
+    left: 45%;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+.success-box {
+    position: fixed;
+    bottom: 20px;
+    left: 45%;
+    background-color: rgb(0, 173, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-down {
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+.additional_info {
+    margin-top: 42%;
+    color: #535353;
+}

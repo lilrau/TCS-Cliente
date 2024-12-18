@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCS - Cliente</title>
-    <link rel="stylesheet" href="../style/home_style.css">
+    <link rel="stylesheet" href="../style/categories_style.css">
     <link rel="stylesheet" href="../style/gen_style.css">
     <script src="https://kit.fontawesome.com/9d2affc56d.js" crossorigin="anonymous"></script>
 </head>
@@ -42,8 +42,17 @@
         </div>
     </section>
     <section class="mainBox">
+        <div class="new-category-section">
+            <h2>Adicionar Nova Categoria</h2>
+            <form id="newCategoryForm">
+                <label for="categoryName">Nome da Categoria:</label>
+                <input type="text" id="categoryName" name="categoryName" placeholder="Digite o nome da categoria" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
 
     </section>
 </body>
 <script type="module" src="/Script/gen_script.js"></script>
+<script type="module" src="/Script/categories_script.js"></script>
 </html>

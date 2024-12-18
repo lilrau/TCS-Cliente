@@ -1,5 +1,10 @@
 import { API_BASE_URL } from "./config.js";
 
+// Adiciona o evento de clique ao botão
+document.querySelector(".register__button").addEventListener("click", () => {
+    window.location.href = "../Pages/register_page.html"; 
+});
+
 document.getElementById("loginForm").addEventListener("submit", async (event) => {
     event.preventDefault(); // Impede o envio padrão do formulário
 

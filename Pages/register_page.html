@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCS - Registrar-se</title>
+    <link rel="stylesheet" href="../style/register_style.css">
+    <script src="https://kit.fontawesome.com/9d2affc56d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="mainBox">
+        <div class="registerImg">
+            <img src="../assets/login_img.jpg" alt="">
+        </div>
+        <div class="registerBox">
+            <span class="registerTitle">Criar nova conta</span>
+            <span class="registerSubtitle">Bem-vindo! Por favor, insira seus dados.</span>
+            <form id="registerForm" class="register__form">
+                <div class="register__content">
+                    <div class="register__box">
+                        <i class="bx bx-lock-alt"></i>
+                        <div class="register__box-input">
+                            <input type="name" id="name" required class="register__input" placeholder="">
+                            <label for="name" class="register__label">Nome</label>
+                            <i class="fa-solid fa-user register__icon"></i>
+                        </div>
+                    </div>
+                    <div class="register__box">
+                        <i class="bx bx-lock-alt"></i>
+                        <div class="register__box-input">
+                            <input type="email" id="email" required class="register__input" placeholder="">
+                            <label for="email" class="register__label">Email</label>
+                            <i class="fa-solid fa-envelope register__icon"></i>
+                        </div>
+                    </div>
+                    <div class="register__box">
+                        <div class="register__box-input">
+                            <input type="password" id="password" required class="register__input" placeholder="">
+                            <label for="password" class="register__label">Senha</label>
+                            <i class="fa-solid fa-key register__icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="login__button">Fazer login</button>
+                <button type="submit" class="register__button">Criar conta</button>
+            </form>
+        </div>      
+    </section>
+</body>
+<script src="../Script/register_script.js" type="module"></script>
+</html>

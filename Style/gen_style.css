@@ -94,3 +94,51 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.error-box {
+    position: fixed;
+    bottom: 20px;
+    left: 45%;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+.success-box {
+    position: fixed;
+    bottom: 20px;
+    left: 45%;
+    background-color: rgb(0, 173, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-down {
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
