@@ -1,2 +1,2 @@
 // config.js
-export const API_BASE_URL = "https://localhost:21233";
+export const API_BASE_URL = "http://localhost:21232";

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCS - Cliente</title>
-    <link rel="stylesheet" href="../style/home_style.css">
     <link rel="stylesheet" href="../style/gen_style.css">
+    <link rel="stylesheet" href="../Style/notices_style.css">
     <script src="https://kit.fontawesome.com/9d2affc56d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="sideBox">
-        <img src="../Assets/utfpr.png" alt="" class="universityLogo">
+        <img src="../Assets/utfpr.png" alt="" class ="universityLogo">
         <span class="menuTxt">MENU</span>
 
         <div class="menuBtns">
@@ -48,16 +48,23 @@
         </div>
     </section>
     <section class="mainBox">
-        <div class="categories-section">
-            <h2>Categorias</h2>
-            <div class="categories-list"></div>
+        <div class="new-notice-section">
+            <h2>Adicionar Novo Aviso</h2>
+            <form id="newNoticeForm">
+                <label for="noticeCategory">Categoria:</label>
+                <select id="noticeCategory" name="noticeCategory" required>
+                    <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+                </select>
+            
+                <label for="noticeName">Descrição do Aviso:</label>
+                <input type="text" id="noticeName" name="noticeName" placeholder="Digite a descrição do aviso" required>
+            
+                <button type="submit">Adicionar</button>
+            </form>
         </div>
-        <div class="avisos-section">
-            <h2>Avisos</h2>
-            <div class="avisos-list"></div>
-        </div>
+
     </section>
 </body>
 <script type="module" src="/Script/gen_script.js"></script>
-<script type="module" src="/Script/home_script.js"></script>
+<script type="module" src="/Script/notice_script.js"></script>
 </html>

@@ -1,0 +1,83 @@
+/* Estilo para a seção de categorias */
+.categories-section {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.categories-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.select-category-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-category-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a seção de avisos */
+.avisos-section {
+    width: 70%;
+    padding: 20px;
+}
+
+.avisos-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.avisos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aviso-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aviso-item p {
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+}
